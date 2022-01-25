@@ -6,6 +6,7 @@
 ##' For use in Rmarkdown documents. Returns the output document type as a string.
 ##'
 ##' @return Output document type as a string: "pdf", "html", or "other".
+##' @export
 ##' @author Dave Braze \email{davebraze@@gmail.com}
 doc_type <- function()
 {

@@ -6,6 +6,7 @@
 ##'
 ##' Use ggplot2::theme_update() to tweak this to specific client needs.
 ##'
+##' @export
 ##' @author Dave Braze \email{davebraze@@gmail.com}
 ##' @param base_size Base font size in points. Defaults to 12.
 ##' @param base_family Base font family. No default.

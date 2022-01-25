@@ -13,6 +13,7 @@
 ##' @param x x position of label. Defaults to 0.5.
 ##' @param y y position of label. Defaults to 0.5.
 ##' @param ... Arguments passed to cowplot::draw_label()
+##' @export
 ##' @return A ggplot2 object.
 ##' @author Dave Braze \email{davebraze@@gmail.com}
 watermark <- function(gg,
