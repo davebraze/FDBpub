@@ -6,6 +6,7 @@
 ##'
 ##' Use ggplot2::theme_update() to tweak this to specific client needs.
 ##'
+##' @importFrom ggplot2 theme element_line element_rect element_text element_blank margin rel unit
 ##' @export
 ##' @author Dave Braze \email{davebraze@@gmail.com}
 ##' @param base_size Base font size in points. Defaults to 12.
@@ -109,8 +110,7 @@ theme_fdbplot <- function(base_size = 12, base_family = "",
                     plot.tag = element_text(face="bold", size=rel(rel_large),
                                             hjust = 0.5, vjust = 0.5),
                     plot.tag.position = "topleft",
-                    plot.margin = margin(half_line, half_line, half_line, half_line),
-                    complete = TRUE)
+                    plot.margin = margin(half_line, half_line, half_line, half_line))
 
     retval
 }

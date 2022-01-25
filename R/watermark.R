@@ -13,6 +13,7 @@
 ##' @param x x position of label. Defaults to 0.5.
 ##' @param y y position of label. Defaults to 0.5.
 ##' @param ... Arguments passed to cowplot::draw_label()
+##' @importFrom cowplot ggdraw draw_label
 ##' @export
 ##' @return A ggplot2 object.
 ##' @author Dave Braze \email{davebraze@@gmail.com}
@@ -33,15 +34,15 @@ watermark <- function(gg,
     ## cowplot::ggdraw(wisc5.plt) +
     ##     cowplot::draw_label("Draft", color = "black", alpha = 0.1, size = 100, angle = 45)
 
-    cowplot::ggdraw(gg) +
-        cowplot::draw_label(gg,
-                           label = text,
-                           size = size,
-                           color = color,
-                           alpha = alpha,
-                           angle = angle,
-                           x=x, y=y,
-                           ...)
+    ggdraw(gg) +
+        draw_label(gg,
+                   label = label,
+                   size = size,
+                   color = color,
+                   alpha = alpha,
+                   angle = angle,
+                   x=x, y=y,
+                   ...)
 
 }
 

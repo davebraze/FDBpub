@@ -18,6 +18,9 @@
 ##' @param full_width Should table be full page width? See kableExtra::kable_styling()
 ##' @param font_size Font size. See kableExtra::kable_styling()
 ##' @return A formated table, per knitr::kable().
+##' @importFrom kableExtra pack_rows kable_styling column_spec
+##' @importFrom knitr kable
+##' @importFrom dplyr %>%
 ##' @export
 ##' @seealso kable(), kable_styling(), pack_rows(), column_spec().
 ##' @author David Braze \email{davebraze@@gmail.com}
