@@ -17,6 +17,15 @@
 ##' @export
 ##' @return A ggplot2 object.
 ##' @author Dave Braze \email{davebraze@@gmail.com}
+##' @seealso \code{\link[cowplot]{draw_label}}
+##' @examples
+##' \dontrun{
+##' library(ggplot2)
+##' data(iris)
+##' tmp <- ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
+##'   geom_point()
+##'   watermark(tmp)}
+
 watermark <- function(gg,
                       label="DRAFT",
                       size=108,
@@ -46,7 +55,3 @@ watermark <- function(gg,
 
 }
 
-
-## tmp <- ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) + geom_point()
-
-##     watermark(tmp)

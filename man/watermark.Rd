@@ -44,6 +44,17 @@ Watermark ggplot with "DRAFT" or other text.
 \details{
 Watermark ggplot with "DRAFT" or other text.
 }
+\examples{
+\dontrun{
+library(ggplot2)
+data(iris)
+tmp <- ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
+  geom_point()
+  watermark(tmp)}
+}
+\seealso{
+\code{\link[cowplot]{draw_label}}
+}
 \author{
 Dave Braze \email{davebraze@gmail.com}
 }

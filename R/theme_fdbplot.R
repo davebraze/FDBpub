@@ -15,6 +15,15 @@
 ##' @param base_rect_size Base line width for rectangles. Defaults to base_size/24.
 ##' @param rel_small Small font size. Defaults to 10/12.
 ##' @param rel_large Large font size. Defaults to 15/12.
+##' @seealso \code{\link[ggplot2]{theme}}
+##' @examples
+##' library(ggplot2)
+##' data(iris)
+##' ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
+##'   geom_point() +
+##'   theme_fdbplot()
+##'
+
 theme_fdbplot <- function(base_size = 12, base_family = "",
                           base_line_size = base_size/24,
                           base_rect_size = base_size/24,

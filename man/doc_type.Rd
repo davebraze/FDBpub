@@ -15,6 +15,13 @@ Return the rmarkdown document output type as string.
 \details{
 For use in Rmarkdown documents. Returns the output document type as a string.
 }
+\examples{
+doc_type()
+
+}
+\seealso{
+\code{\link[knitr]{is_html_output}}
+}
 \author{
 Dave Braze \email{davebraze@gmail.com}
 }

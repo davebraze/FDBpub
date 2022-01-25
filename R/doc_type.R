@@ -8,6 +8,10 @@
 ##' @return Output document type as a string: "pdf", "html", or "other".
 ##' @export
 ##' @author Dave Braze \email{davebraze@@gmail.com}
+##' @seealso \code{\link[knitr]{is_html_output}}
+##' @examples
+##' doc_type()
+##'
 doc_type <- function()
 {
     out_type <- "other"

@@ -34,6 +34,17 @@ GGplot2 theme based on theme_gray().
 
 Use ggplot2::theme_update() to tweak this to specific client needs.
 }
+\examples{
+library(ggplot2)
+data(iris)
+ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
+  geom_point() +
+  theme_fdbplot()
+
+}
+\seealso{
+\code{\link[ggplot2]{theme}}
+}
 \author{
 Dave Braze \email{davebraze@gmail.com}
 }
