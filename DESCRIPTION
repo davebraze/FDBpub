@@ -1,0 +1,25 @@
+Package: FDBpub
+Title: Helpers for report writing
+Version: 0.0.0.9000
+Authors@R: 
+    person("David", "Braze", , "davebraze@gmail.com", role = c("aut", "cre"))
+Description: Tools to help with formatting reports: figures, tables, document style.
+Depends:
+Imports:
+	ggplot2,
+	cowplot,
+	knitr,
+	kableExtra,
+	dplyr
+Suggests:
+Collate: 
+    'FDBpub-package.R'
+    'doc_type.R'
+    'format_table.R'
+    'theme_fdbplot.R'
+    'watermark.R'
+    'zzz.R'
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2

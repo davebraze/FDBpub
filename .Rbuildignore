@@ -1,0 +1,13 @@
+^LICENSE\.md$
+^README\.Rmd$
+^README-.*\.png$
+^\.travis\.yml$
+^inst/web$
+^docs$
+^_pkgdown\.yml$
+^.*\.Rproj$
+^\.Rproj\.user$
+^Makefile$
+^\.git$
+^\.gitignore$
+^\.Rbuildignore
