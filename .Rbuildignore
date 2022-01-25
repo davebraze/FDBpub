@@ -1,5 +1,6 @@
 ^LICENSE\.md$
 ^README\.Rmd$
+^README\.md$
 ^README-.*\.png$
 ^\.travis\.yml$
 ^inst/web$
