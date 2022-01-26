@@ -14,10 +14,11 @@
 ##'
 doc_type <- function()
 {
-    out_type <- "other"
+    retval <- "other"
     if (knitr::is_html_output()) {
-        out_type <- "html"
+        retval <- "html"
     } else if (knitr::is_latex_output()) {
-        out_type <- "pdf"
+        retval <- "pdf"
     }
+    retval
 }
