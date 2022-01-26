@@ -4,7 +4,7 @@
 ##'
 ##' @details Watermark ggplot with "DRAFT" or other text.
 ##'
-##' @param gg A ggplot object to be watermarked.
+##' @param plot A ggplot object to be watermarked.
 ##' @param label Text to use as watermark. Defaults to "DRAFT".
 ##' @param size Text size in points. Defaults to 108.
 ##' @param color Watermark color. Defaults to "black".
@@ -19,14 +19,14 @@
 ##' @author Dave Braze \email{davebraze@@gmail.com}
 ##' @seealso \code{\link[cowplot]{draw_label}}
 ##' @examples
-##' \dontrun{
 ##' library(ggplot2)
 ##' data(iris)
 ##' tmp <- ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
 ##'   geom_point()
-##'   watermark(tmp)}
+##'   watermark(tmp)
+##'
 
-watermark <- function(gg,
+watermark <- function(plot,
                       label="DRAFT",
                       size=108,
                       color="black",
@@ -43,9 +43,8 @@ watermark <- function(gg,
     ## cowplot::ggdraw(wisc5.plt) +
     ##     cowplot::draw_label("Draft", color = "black", alpha = 0.1, size = 100, angle = 45)
 
-    ggdraw(gg) +
-        draw_label(gg,
-                   label = label,
+    ggdraw(plot) +
+        draw_label(label = label,
                    size = size,
                    color = color,
                    alpha = alpha,

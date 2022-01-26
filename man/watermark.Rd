@@ -5,7 +5,7 @@
 \title{Watermark ggplot with "DRAFT"}
 \usage{
 watermark(
-  gg,
+  plot,
   label = "DRAFT",
   size = 108,
   color = "black",
@@ -17,7 +17,7 @@ watermark(
 )
 }
 \arguments{
-\item{gg}{A ggplot object to be watermarked.}
+\item{plot}{A ggplot object to be watermarked.}
 
 \item{label}{Text to use as watermark. Defaults to "DRAFT".}
 
@@ -45,12 +45,12 @@ Watermark ggplot with "DRAFT" or other text.
 Watermark ggplot with "DRAFT" or other text.
 }
 \examples{
-\dontrun{
 library(ggplot2)
 data(iris)
 tmp <- ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
   geom_point()
-  watermark(tmp)}
+  watermark(tmp)
+
 }
 \seealso{
 \code{\link[cowplot]{draw_label}}
