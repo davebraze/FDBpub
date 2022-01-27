@@ -37,9 +37,19 @@ Use ggplot2::theme_update() to tweak this to specific client needs.
 \examples{
 library(ggplot2)
 data(iris)
+
+## Set per plot.
 ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
   geom_point() +
   theme_fdbplot()
+
+## Set as default theme at top of Rmarkdown file. Possibly with modifications
+theme_set(FDBpub::theme_fdbplot())
+theme_update(strip.background = element_rect(fill = "lightyellow", colour = NA),
+         strip.text = element_text(colour = "midnightblue"))
+ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
+  geom_point() +
+  facet_wrap(nrow=1, facets="Species")
 
 }
 \seealso{
