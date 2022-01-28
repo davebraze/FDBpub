@@ -6,14 +6,16 @@ Authors@R:
 Description: Tools to help with formatting reports: figures, tables, document style.
 Depends:
 Imports:
-	ggplot2,
 	cowplot,
-	knitr,
+	dplyr,
+	ggplot2,
 	kableExtra,
-	dplyr
+	knitr,
+	rmarkdown
 Suggests:
 Collate: 
     'FDBpub-package.R'
+    'is_draft.R'
     'doc_type.R'
     'format_table.R'
     'theme_fdbplot.R'

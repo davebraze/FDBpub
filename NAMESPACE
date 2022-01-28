@@ -2,6 +2,7 @@
 
 export(doc_type)
 export(format_table)
+export(is_draft)
 export(theme_fdbplot)
 export(watermark)
 importFrom(cowplot,draw_label)
@@ -19,3 +20,4 @@ importFrom(kableExtra,column_spec)
 importFrom(kableExtra,kable_styling)
 importFrom(kableExtra,pack_rows)
 importFrom(knitr,kable)
+importFrom(rmarkdown,metadata)
