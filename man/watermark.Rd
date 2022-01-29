@@ -13,6 +13,7 @@ watermark(
   angle = 45,
   x = 0.5,
   y = 0.5,
+  do = TRUE,
   ...
 )
 }
@@ -33,6 +34,8 @@ watermark(
 
 \item{y}{y position of label. Defaults to 0.5.}
 
+\item{do}{logical specifying whether to apply the watermark. Defaults to TRUE.}
+
 \item{...}{Arguments passed to cowplot::draw_label()}
 }
 \value{
@@ -50,6 +53,10 @@ data(iris)
 tmp <- ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
   geom_point()
   watermark(tmp)
+
+## alternately, in an rmarkdown file maybe do
+
+watermark(tmp, do=is_draft())
 
 }
 \seealso{

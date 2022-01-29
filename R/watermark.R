@@ -12,6 +12,7 @@
 ##' @param angle Watermark angle. Defaults to 45°.
 ##' @param x x position of label. Defaults to 0.5.
 ##' @param y y position of label. Defaults to 0.5.
+##' @param do logical specifying whether to apply the watermark. Defaults to TRUE.
 ##' @param ... Arguments passed to cowplot::draw_label()
 ##' @importFrom cowplot ggdraw draw_label
 ##' @export
@@ -25,6 +26,10 @@
 ##'   geom_point()
 ##'   watermark(tmp)
 ##'
+##' ## alternately, in an rmarkdown file maybe do
+##'
+##' watermark(tmp, do=is_draft())
+##'
 
 watermark <- function(plot,
                       label="DRAFT",
@@ -34,14 +39,10 @@ watermark <- function(plot,
                       angle=45,
                       x = 0.5,
                       y = 0.5,
+                      do = TRUE,
                       ...)
 {
-
-
-    ## wisc5.plt + cowplot::draw_text("DRAFT", size = 36, alpha = .1, angle=45, y=100, x=2.5)
-
-    ## cowplot::ggdraw(wisc5.plt) +
-    ##     cowplot::draw_label("Draft", color = "black", alpha = 0.1, size = 100, angle = 45)
+    if(!do) return(plot)
 
     ggdraw(plot) +
         draw_label(label = label,
