@@ -21,6 +21,7 @@ Collate:
     'theme_fdbplot.R'
     'watermark.R'
     'zzz.R'
+URL: https://github.com/davebraze/FDBpub
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
