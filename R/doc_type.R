@@ -5,6 +5,7 @@
 ##' @details
 ##' For use in Rmarkdown documents. Returns the output document type as a string.
 ##'
+##' @importFrom knitr is_html_output is_latex_output
 ##' @return Output document type as a string: "pdf", "html", or "other".
 ##' @export
 ##' @author Dave Braze \email{davebraze@@gmail.com}
@@ -15,9 +16,9 @@
 doc_type <- function()
 {
     retval <- "other"
-    if (knitr::is_html_output()) {
+    if (is_html_output()) {
         retval <- "html"
-    } else if (knitr::is_latex_output()) {
+    } else if (is_latex_output()) {
         retval <- "pdf"
     }
     retval

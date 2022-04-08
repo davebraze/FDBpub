@@ -54,4 +54,3 @@ watermark <- function(plot,
                    ...)
 
 }
-

@@ -17,6 +17,7 @@ Collate:
     'FDBpub-package.R'
     'is_draft.R'
     'doc_type.R'
+    'palette_fdb.R'
     'format_table.R'
     'theme_fdbplot.R'
     'watermark.R'
