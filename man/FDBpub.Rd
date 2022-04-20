@@ -11,6 +11,13 @@ help with building and formatting reports in an Rmarkdown
 workflow. It includes helpers for ggplot graphics, kable tables,
 and maybe some other stuff.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/davebraze/FDBpub}
+}
+
+}
 \author{
 \strong{Maintainer}: David Braze \email{davebraze@gmail.com}
 
